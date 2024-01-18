@@ -1,0 +1,317 @@
+nav {
+  display: flex;
+  width: 75%;
+  height: 10vh;
+  overflow: hidden;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins";
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav .nav-left {
+  width: 30%;
+  display: flex;
+}
+
+nav .nav-left a {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-left a img {
+  width: 114px;
+  height: 40px;
+}
+
+nav .nav-right {
+  width: 381px;
+  gap: 36px;
+  height: 25px;
+  display: flex;
+}
+
+nav .nav-right ul {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  margin: 5px;
+}
+
+nav .nav-right ul li {
+  margin-left: 10px;
+}
+
+nav .nav-right ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+}
+
+nav .nav-right ul li img {
+  width: 18px;
+  height: 2px;
+  float: left;
+}
+
+nav .nav-right ul li .garis-bawah-pudar {
+  opacity: 30%;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+  font-family: "Poppins";
+  margin-top: 60px;
+}
+
+.container section {
+  display: flex;
+  height: 531px;
+  width: 100%;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.container section .section-left {
+  width: 494px;
+  /* background: rgb(185, 235, 162); */
+}
+
+.container section .section-left h1 {
+  font-family: "Playfair Display";
+  font-size: 52px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.container section .section-left .description {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.container section .section-left .left-content-1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.container section .section-left .left-content-1 .left-content-1-left {
+  width: 294px;
+}
+
+.container section .section-left .left-content-1 .left-content-1-right {
+  height: 25px;
+  gap: 8px;
+  justify-content: end;
+}
+
+.container section .section-left .left-content-1 .left-content-1-right a {
+  color: black;
+}
+
+.container section .section-left .left-content-1 button {
+  width: 248px;
+  height: 56px;
+  border-radius: 19px;
+  padding: 14px 25px 14px 25px;
+  gap: 10px;
+  background: #f2f0df;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28.44px;
+  border: none;
+}
+
+.container section .section-left .left-content-2 {
+  width: 494px;
+  height: 155px;
+  border-radius: 19px;
+  border: solid 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container section .section-left .left-content-2 .left-content-2-left {
+  display: flex;
+  align-items: center;
+  font-size: 33px;
+  font-weight: 275;
+  margin-left: 30px;
+}
+
+.container section .section-left .left-content-2 .left-content-2-right {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 30px;
+}
+
+.container section .section-right {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container section .section-right .right-content-1 {
+  background-image: url("assets/sepatu.png");
+  background-size: 100%;
+  background-position: center;
+  width: 254px;
+  height: 531px;
+  border-radius: 20px;
+  transition: background-size 2s ease;
+}
+.container section .section-right .right-content-1:hover{
+  background-size: 120%;
+}
+
+.container section .section-right .right-content-1 .right-content-1-container {
+  width: 227px;
+  height: 61px;
+  margin-inline: auto;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container
+  section
+  .section-right
+  .right-content-1
+  .right-content-1-container
+  .description {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 193px;
+  height: 47px;
+}
+
+.container
+  section
+  .section-right
+  .right-content-1
+  .right-content-1-container
+  .description
+  p {
+  margin: 0;
+}
+
+.container
+  section
+  .section-right
+  .right-content-1
+  .right-content-1-container
+  .description
+  .header {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.container
+  section
+  .section-right
+  .right-content-1
+  .right-content-1-container
+  .description
+  .name {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.container
+  section
+  .section-right
+  .right-content-1
+  .right-content-1-container
+  .description
+  .line {
+  width: 1px;
+}
+
+.right-content-1-container-space {
+  height: 86%;
+}
+
+.right-content-2 {
+  width: 254px;
+}
+
+.right-content-2 .top {
+  background-image: url("assets/baju.png");
+  background-size: 100%;
+  background-position: center;
+  width: 254px;
+  height: 251px;
+  margin: 0;
+  border-radius: 20px;
+  transition: background-size 2s ease;
+}
+
+.right-content-2 .top:hover{
+    background-size: 120%;
+}
+
+.right-content-2 .space {
+  height: 46%;
+}
+
+.right-content-2 .container {
+  width: 227px;
+  height: 61px;
+  margin-inline: auto;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-content-2 .container .description {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 193px;
+  height: 47px;
+}
+
+.right-content-2 .container .description p {
+  margin: 0;
+}
+
+.right-content-2 .container .description .header {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.right-content-2 .container .description .name {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.right-content-2 .bot {
+  background-image: url("assets/jaket.png");
+  background-size: 100%;
+  background-position: center;
+  width: 254px;
+  height: 251px;
+  margin-top: 28px;
+  border-radius: 20px;
+  transition: background-image 2s ease;
+}
+
+.right-content-2 .bot:hover{
+  background-image: url("assets/baju.png");
+}

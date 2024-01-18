@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fauxcia</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair Display"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="onPageLoad();">
+    <nav>
+      <div class="nav-left">
+        <a href="index.html"><img src="assets/logo.png" alt="Logo" /></a>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <div>
+              <a href="index.html">HOME</a>
+            </div>
+            <div>
+              <img
+                class="garis-bawah-tebal"
+                src="assets/garis bawah tebal.png"
+              />
+            </div>
+          </li>
+          <li onmouseover="showLine(this)" onmouseout="hideLine(this)">
+            <div>
+              <a href="index.html">PRODUCTS</a>
+            </div>
+            <div>
+              <img id="underLine1"
+                class="garis-bawah-pudar"
+                src="assets/garis bawah pudar.png"
+              />
+            </div>
+          </li>
+          <li onmouseover="showLine(this)" onmouseout="hideLine(this)">
+            <div>
+              <a href="index.html">GALLERY</a>
+            </div>
+            <div>
+              <img
+                id="underLine2"
+                class="garis-bawah-pudar"
+                src="assets/garis bawah pudar.png"
+              />
+            </div>
+          </li>
+          <li onmouseover="showLine(this)" onmouseout="hideLine(this)">
+            <div>
+              <a href="index.html">CONTACT</a>
+            </div>
+            <div>
+              <img
+                id="underLine3"
+                class="garis-bawah-pudar"
+                src="assets/garis bawah pudar.png"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <section>
+        <div class="section-left">
+          <h1>
+            Quality apparel <br />
+            without the price tag
+          </h1>
+          <p class="description">
+            No need to spend $xxx on apparel just for the name’s sake. Our
+            premium apparel is made from the same stuff.
+          </p>
+          <div class="left-content-1">
+            <div class="left-content-1-left">
+              <button>Browse our collection</button>
+            </div>
+            <div
+              onmouseover="forwardArrow()"
+              onmouseout="normalArrow()"
+              class="left-content-1-right"
+            >
+              <span><a href="">spring '23 Collection'</a></span>
+              <span style="transition: margin-left 1s ease" id="moveArrow"
+                ><img src="assets/panah.png" alt=""
+              /></span>
+            </div>
+          </div>
+          <div class="left-content-2">
+            <div class="left-content-2-left">
+              <p>50k</p>
+            </div>
+            <div class="left-content-2-right">
+              <p>
+                We’re proud to announce that we now<br />
+                employ a workforce of over <b>50,000</b>. It’s all<br />
+                possible because of you.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section-right">
+          <div class="right-content-1">
+            <div class="right-content-1-container-space"></div>
+            <div class="right-content-1-container">
+              <div class="description">
+                <div>
+                  <p class="header">Fauxica Sport</p>
+                  <p class="name">Running Shoe</p>
+                </div>
+                <div>
+                  <img class="line" src="assets/Line v.png" alt="" />
+                </div>
+                <div style="display: flex; align-items: center">
+                  <p>$59</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-content-2">
+            <div class="top">
+              <div class="space"></div>
+              <div class="container">
+                <div class="description">
+                  <div>
+                    <p class="header">Fauxica Sport</p>
+                    <p class="name">Running Shoe</p>
+                  </div>
+                  <div>
+                    <img class="line" src="assets/Line v.png" alt="" />
+                  </div>
+                  <div style="display: flex; align-items: center">
+                    <p>$59</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bot">
+              <div class="space"></div>
+              <div class="container">
+                <div class="description">
+                  <div>
+                    <p class="header">Fauxica Sport</p>
+                    <p class="name">Running Shoe</p>
+                  </div>
+                  <div>
+                    <img class="line" src="assets/Line v.png" alt="" />
+                  </div>
+                  <div style="display: flex; align-items: center">
+                    <p>$59</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      var arrow = document.getElementById("moveArrow");
+
+      function onPageLoad() {
+            var underLine1 = document.getElementById('underLine1');
+            var underLine2 = document.getElementById('underLine2');
+            var underLine3 = document.getElementById('underLine3');
+            underLine1.style.opacity = "0";
+            underLine2.style.opacity = "0";
+            underLine3.style.opacity = "0";
+          }
+
+      function forwardArrow() {
+        arrow.style.marginLeft = "14px";
+      }
+
+      function normalArrow() {
+        arrow.style.marginLeft = "0px";
+      }
+
+      function showLine(obj) {
+        var underLine = obj.getElementsByTagName("img")[0];
+        underLine.style.opacity = "30%";
+      }
+
+      function hideLine(obj) {
+        var underLine = obj.getElementsByTagName("img")[0];
+        underLine.style.opacity = "0";
+      }
+    </script>
+  </body>
+</html>
