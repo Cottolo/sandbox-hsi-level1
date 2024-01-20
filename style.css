@@ -77,6 +77,7 @@ nav .nav-right ul li .garis-bawah-pudar {
   height: 531px;
   width: 100%;
   justify-content: space-between;
+  gap: 100px;
   /* align-items: center; */
 }
 
@@ -160,6 +161,7 @@ nav .nav-right ul li .garis-bawah-pudar {
   width: 540px;
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .container section .section-right .right-content-1 {
